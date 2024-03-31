@@ -1,0 +1,16 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:DataGrid_With_DataTable"
+        x:DataType="local:MainWindowViewModel"
+        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+        x:Class="DataGrid_With_DataTable.MainWindow"
+        Title="DataGrid_With_DataTable">
+    <DataGrid ItemsSource="{Binding Table.Rows}">
+        <DataGrid.Columns>
+            <DataGridTextColumn Header="Name" Binding="{ReflectionBinding Name}"/>
+            <DataGridTextColumn Header="Age" Binding="{ReflectionBinding Age}"/>
+        </DataGrid.Columns>
+    </DataGrid>
+</Window>
