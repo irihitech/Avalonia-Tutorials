@@ -7,6 +7,10 @@
         mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
         x:Class="DataGrid_With_DataTable.MainWindow"
         Title="DataGrid_With_DataTable">
-    <DataGrid local:DataTableBindingHelper.TableBinding="{Binding Table}">
+    <DataGrid ItemsSource="{Binding Table.Rows}">
+        <DataGrid.Columns>
+            <DataGridTextColumn Header="Name" Binding="{ReflectionBinding Name}"/>
+            <DataGridTextColumn Header="Age" Binding="{ReflectionBinding Age}"/>
+        </DataGrid.Columns>
     </DataGrid>
 </Window>
