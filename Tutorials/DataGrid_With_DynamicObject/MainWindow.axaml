@@ -1,0 +1,17 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+        x:Class="DataGrid_With_DynamicObject.MainWindow"
+        xmlns:local="clr-namespace:DataGrid_With_DynamicObject"
+        x:DataType="local:MainWindowViewModel"
+        Title="DataGrid_With_DynamicObject">
+    <DataGrid ItemsSource="{Binding Items}">
+        <DataGrid.Columns>
+            <DataGridTextColumn Header="Id" Binding="{ReflectionBinding Path=Id}"/>
+            <DataGridTextColumn Header="Name" Binding="{ReflectionBinding Path=Name}"/>
+            <DataGridTextColumn Header="Value" Binding="{ReflectionBinding Path=Value}"/>
+        </DataGrid.Columns>
+    </DataGrid>
+</Window>
