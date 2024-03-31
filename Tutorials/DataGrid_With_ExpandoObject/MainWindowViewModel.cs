@@ -2,7 +2,7 @@ using System.Collections.Generic;
 using System.Dynamic;
 using CommunityToolkit.Mvvm.ComponentModel;
 
-namespace DataGrid_With_DynamicObject;
+namespace DataGrid_With_ExpandoObject;
 
 public class MainWindowViewModel: ObservableObject
 {

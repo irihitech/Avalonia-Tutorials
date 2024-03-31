@@ -4,7 +4,7 @@ using Avalonia.Markup.Xaml;
 using Avalonia.Data.Core;
 using Avalonia.Data.Core.Plugins;
 
-namespace DataGrid_With_DynamicObject;
+namespace DataGrid_With_ExpandoObject;
 
 public partial class App : Application
 {

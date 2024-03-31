@@ -1,7 +1,7 @@
 ﻿using Avalonia;
 using System;
 
-namespace DataGrid_With_DynamicObject;
+namespace DataGrid_With_ExpandoObject;
 
 class Program
 {

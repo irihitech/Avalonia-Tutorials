@@ -1,6 +1,6 @@
 using Avalonia.Controls;
 
-namespace DataGrid_With_DynamicObject;
+namespace DataGrid_With_ExpandoObject;
 
 public partial class MainWindow : Window
 {

@@ -3,10 +3,10 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
-        x:Class="DataGrid_With_DynamicObject.MainWindow"
-        xmlns:local="clr-namespace:DataGrid_With_DynamicObject"
+        x:Class="DataGrid_With_ExpandoObject.MainWindow"
+        xmlns:local="clr-namespace:DataGrid_With_ExpandoObject"
         x:DataType="local:MainWindowViewModel"
-        Title="DataGrid_With_DynamicObject">
+        Title="DataGrid Bind to ExpandoObject">
     <DataGrid ItemsSource="{Binding Items}">
         <DataGrid.Columns>
             <DataGridTextColumn Header="Id" Binding="{ReflectionBinding Path=Id}"/>

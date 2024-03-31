@@ -1,6 +1,6 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataGrid_With_DynamicObject", "DataGrid_With_DynamicObject\DataGrid_With_DynamicObject.csproj", "{9AAED5D2-DD4A-4735-9892-EAEDBBBD055B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataGrid_With_ExpandoObject", "DataGrid_With_ExpandoObject\DataGrid_With_ExpandoObject.csproj", "{09F739B6-67E8-429D-84BF-A629C61CC44B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -8,9 +8,9 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{9AAED5D2-DD4A-4735-9892-EAEDBBBD055B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{9AAED5D2-DD4A-4735-9892-EAEDBBBD055B}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{9AAED5D2-DD4A-4735-9892-EAEDBBBD055B}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{9AAED5D2-DD4A-4735-9892-EAEDBBBD055B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{09F739B6-67E8-429D-84BF-A629C61CC44B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{09F739B6-67E8-429D-84BF-A629C61CC44B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{09F739B6-67E8-429D-84BF-A629C61CC44B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{09F739B6-67E8-429D-84BF-A629C61CC44B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

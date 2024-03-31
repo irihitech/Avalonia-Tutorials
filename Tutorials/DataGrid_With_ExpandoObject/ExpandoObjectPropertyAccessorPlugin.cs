@@ -6,7 +6,7 @@ using Avalonia.Data;
 using Avalonia.Data.Core.Plugins;
 using Avalonia.Utilities;
 
-namespace DataGrid_With_DynamicObject;
+namespace DataGrid_With_ExpandoObject;
 
 public class ExpandoObjectPropertyAccessorPlugin: IPropertyAccessorPlugin
 {
