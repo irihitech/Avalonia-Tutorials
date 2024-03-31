@@ -77,12 +77,10 @@ class ExpandoObjectAccessor : PropertyAccessorBase, IWeakEventSubscriber<Propert
         {
             target[_propertyName] = value;
         }
-    
         if (!_eventRaised)
         {
             SendCurrentValue();
         }
-    
         return true;
     }
     
@@ -103,16 +101,13 @@ class ExpandoObjectAccessor : PropertyAccessorBase, IWeakEventSubscriber<Propert
     
     protected override void UnsubscribeCore()
     {
-        var inpc = GetReferenceTarget() as INotifyPropertyChanged;
-    
-        if (inpc != null)
+        if (GetReferenceTarget() is INotifyPropertyChanged inpc)
             WeakEvents.ThreadSafePropertyChanged.Unsubscribe(inpc, this);
     }
     
     private IDictionary<string, object?>? GetReferenceTarget()
     {
         _reference.TryGetTarget(out var target);
-    
         return target as IDictionary<string, object?>;
     }
     
