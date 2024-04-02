@@ -1,0 +1,20 @@
+<Window
+    x:Class="Ursa_Dialog_Basic.MainWindow"
+    xmlns="https://github.com/avaloniaui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:u="https://irihi.tech/ursa"
+    Title="Ursa_Dialog_Basic"
+    d:DesignHeight="450"
+    d:DesignWidth="800"
+    mc:Ignorable="d">
+    <Panel>
+        <Button
+            HorizontalAlignment="Center"
+            VerticalAlignment="Center"
+            Click="Button_OnClick"
+            Content="Call Overlay Dialog" />
+        <u:OverlayDialogHost />
+    </Panel>
+</Window>

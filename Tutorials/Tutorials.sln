@@ -4,6 +4,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataGrid_With_ExpandoObject
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataGrid_With_DataTable", "DataGrid_With_DataTable\DataGrid_With_DataTable.csproj", "{73B3BE12-185C-49B9-9B11-3C2697A6C93A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ursa_Dialog_Basic", "Ursa_Dialog_Basic\Ursa_Dialog_Basic.csproj", "{59422432-C185-4F5E-B28D-17B084279587}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -18,5 +20,9 @@ Global
 		{73B3BE12-185C-49B9-9B11-3C2697A6C93A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{73B3BE12-185C-49B9-9B11-3C2697A6C93A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{73B3BE12-185C-49B9-9B11-3C2697A6C93A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{59422432-C185-4F5E-B28D-17B084279587}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{59422432-C185-4F5E-B28D-17B084279587}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{59422432-C185-4F5E-B28D-17B084279587}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{59422432-C185-4F5E-B28D-17B084279587}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
