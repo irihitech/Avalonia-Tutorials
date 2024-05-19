@@ -1,0 +1,46 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:vm="using:FormLayout.ViewModels"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:u="https://irihi.tech/ursa"
+        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+        x:Class="FormLayout.Views.MainWindow"
+        x:DataType="vm:MainWindowViewModel"
+        Icon="/Assets/avalonia-logo.ico"
+        Title="FormLayout">
+
+    <Design.DataContext>
+        <!-- This only sets the DataContext for the previewer in an IDE,
+             to set the actual DataContext for runtime, set the DataContext property in code (look at App.axaml.cs) -->
+        <vm:MainWindowViewModel/>
+    </Design.DataContext>
+
+    <Grid>
+        <ScrollViewer>
+            <u:Form LabelPosition="Left" Width="600">
+                <u:Form.ItemsPanel>
+                    <ItemsPanelTemplate>
+                        <Grid RowDefinitions="Auto, Auto, Auto, Auto, Auto" ColumnDefinitions="*, *, *, *"/>
+                    </ItemsPanelTemplate>
+                </u:Form.ItemsPanel>
+                <u:FormItem Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="4" Label="API"  >
+                    <TextBox ></TextBox>
+                </u:FormItem>
+                <u:FormItem Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2" Label="Client ID"  >
+                    <TextBox ></TextBox>
+                </u:FormItem>
+                <u:FormItem Grid.Row="1" Grid.Column="2" Grid.ColumnSpan="2" Label="Client Secret"  >
+                    <TextBox ></TextBox>
+                </u:FormItem>
+                <u:FormItem Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="4" Label="Request"  >
+                    <TextBox ></TextBox>
+                </u:FormItem>
+                <u:FormItem Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="4" Label="Response"  >
+                    <TextBox ></TextBox>
+                </u:FormItem>
+            </u:Form>
+        </ScrollViewer>
+    </Grid>
+
+</Window>

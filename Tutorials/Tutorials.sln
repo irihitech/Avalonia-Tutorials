@@ -8,6 +8,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ursa_Dialog_Basic", "Ursa_D
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Use_ItemsPanel", "Use_ItemsPanel\Use_ItemsPanel.csproj", "{E73B8059-D265-471E-945D-12D941214422}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FormLayout", "FormLayout\FormLayout.csproj", "{0DA6A1FA-F780-4003-BF70-CA70C25CAB42}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -30,5 +32,9 @@ Global
 		{E73B8059-D265-471E-945D-12D941214422}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E73B8059-D265-471E-945D-12D941214422}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E73B8059-D265-471E-945D-12D941214422}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0DA6A1FA-F780-4003-BF70-CA70C25CAB42}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0DA6A1FA-F780-4003-BF70-CA70C25CAB42}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0DA6A1FA-F780-4003-BF70-CA70C25CAB42}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0DA6A1FA-F780-4003-BF70-CA70C25CAB42}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
