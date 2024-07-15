@@ -26,7 +26,7 @@ public class ScannerTextBox: TextBox
                 e.Handled = true;
                 break;
             }
-            case >= Key.A and < Key.Z:
+            case >= Key.A and <= Key.Z:
             {
                 var s = e.Key.ToString();
                 InsertText(s);
