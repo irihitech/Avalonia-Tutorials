@@ -23,6 +23,7 @@ public class ScannerTextBox: TextBox
 
     private static void OnScannerKeyDown(ScannerTextBox arg1, KeyEventArgs arg2)
     {
+        arg1.OnKeyDown(arg2);
         if (arg2.Handled) return;
         switch (arg2.PhysicalKey)
         {
@@ -68,6 +69,11 @@ public class ScannerTextBox: TextBox
     private void InsertText(string s)
     {
         var caretIndex = CaretIndex;
+        if(SelectionStart != SelectionEnd)
+        {
+            Text = Text?.Remove(SelectionStart, SelectionEnd - SelectionStart);
+            CaretIndex = SelectionStart;
+        }
         Text = string.IsNullOrEmpty(Text) ? s : Text.Insert(caretIndex, s);
         CaretIndex += s.Length;
     }
