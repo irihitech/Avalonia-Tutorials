@@ -68,13 +68,14 @@ public class ScannerTextBox: TextBox
 
     private void InsertText(string s)
     {
-        var caretIndex = CaretIndex;
         if(SelectionStart != SelectionEnd)
         {
-            Text = Text?.Remove(SelectionStart, SelectionEnd - SelectionStart);
-            CaretIndex = SelectionStart;
+            var min = Math.Min(SelectionStart, SelectionEnd);
+            var max = Math.Max(SelectionStart, SelectionEnd);
+            Text = Text?.Remove(min, max-min);
+            CaretIndex = min;
         }
-        Text = string.IsNullOrEmpty(Text) ? s : Text.Insert(caretIndex, s);
+        Text = string.IsNullOrEmpty(Text) ? s : Text.Insert(CaretIndex, s);
         CaretIndex += s.Length;
     }
 }
