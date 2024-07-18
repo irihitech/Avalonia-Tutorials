@@ -12,6 +12,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FormLayout", "FormLayout\Fo
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Handle_TextBox_Input", "Handle_TextBox_Input\Handle_TextBox_Input.csproj", "{5227EE4E-876D-4C99-8C21-8321FF293D2B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Semi_Enable_Trimming", "Semi_Enable_Trimming\Semi_Enable_Trimming.csproj", "{C4C147E0-545E-406B-865E-750D6C6C6A38}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -42,5 +44,9 @@ Global
 		{5227EE4E-876D-4C99-8C21-8321FF293D2B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5227EE4E-876D-4C99-8C21-8321FF293D2B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5227EE4E-876D-4C99-8C21-8321FF293D2B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C4C147E0-545E-406B-865E-750D6C6C6A38}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C4C147E0-545E-406B-865E-750D6C6C6A38}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C4C147E0-545E-406B-865E-750D6C6C6A38}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C4C147E0-545E-406B-865E-750D6C6C6A38}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
