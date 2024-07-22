@@ -1,0 +1,25 @@
+<UserControl
+    x:Class="UrsaNativeAOT.DemoDialog"
+    xmlns="https://github.com/avaloniaui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:u="https://irihi.tech/ursa"
+    d:DesignHeight="450"
+    d:DesignWidth="800"
+    mc:Ignorable="d">
+    <StackPanel>
+        <u:Form>
+            <TextBox
+                Width="300"
+                Margin="0,8"
+                u:FormItem.Label="Name" />
+            <TextBox
+                Width="300"
+                Margin="0,8"
+                u:FormItem.Label="Password"
+                Classes="revealPassword"
+                PasswordChar="*" />
+        </u:Form>
+    </StackPanel>
+</UserControl>

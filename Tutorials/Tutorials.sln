@@ -14,6 +14,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Handle_TextBox_Input", "Han
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Semi-NativeAOT", "Semi-NativeAOT\Semi-NativeAOT.csproj", "{D7160739-9501-4AC5-B821-7DB379E20002}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ursa-NativeAOT", "Ursa-NativeAOT\Ursa-NativeAOT.csproj", "{5B87F7B5-9ECD-4C53-9EEA-FEC5EE917737}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -48,5 +50,9 @@ Global
 		{D7160739-9501-4AC5-B821-7DB379E20002}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D7160739-9501-4AC5-B821-7DB379E20002}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D7160739-9501-4AC5-B821-7DB379E20002}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5B87F7B5-9ECD-4C53-9EEA-FEC5EE917737}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5B87F7B5-9ECD-4C53-9EEA-FEC5EE917737}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5B87F7B5-9ECD-4C53-9EEA-FEC5EE917737}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5B87F7B5-9ECD-4C53-9EEA-FEC5EE917737}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

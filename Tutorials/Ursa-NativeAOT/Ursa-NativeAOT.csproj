@@ -1,0 +1,22 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+    <PropertyGroup>
+        <OutputType>WinExe</OutputType>
+        <TargetFramework>net8.0</TargetFramework>
+        <Nullable>enable</Nullable>
+        <RootNamespace>UrsaNativeAOT</RootNamespace>
+        <BuiltInComInteropSupport>true</BuiltInComInteropSupport>
+        <ApplicationManifest>app.manifest</ApplicationManifest>
+        <AvaloniaUseCompiledBindingsByDefault>true</AvaloniaUseCompiledBindingsByDefault>
+        <PublishAot>true</PublishAot>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Avalonia" Version="11.1.0-rc2"/>
+        <PackageReference Include="Avalonia.Desktop" Version="11.1.0-rc2"/>
+        <!--Condition below is needed to remove Avalonia.Diagnostics package from build output in Release configuration.-->
+        <PackageReference Condition="'$(Configuration)' == 'Debug'" Include="Avalonia.Diagnostics" Version="11.1.0-rc2"/>
+        <PackageReference Include="Irihi.Ursa" Version="1.0.0-rc1" />
+        <PackageReference Include="Irihi.Ursa.Themes.Semi" Version="1.0.0-rc1" />
+        <PackageReference Include="Semi.Avalonia" Version="11.1.0-rc2.1" />
+    </ItemGroup>
+</Project>
