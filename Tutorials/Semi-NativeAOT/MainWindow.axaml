@@ -1,0 +1,14 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+        x:Class="Semi_NativeAOT.MainWindow"
+        Title="Semi_NativeAOT">
+    <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center" Spacing="30">
+        <Button Content="Hello World"/>
+        <Button Content="Hello Avalonia"/>
+        <Slider Width="300" Name="slider"></Slider>
+        <ProgressBar Value="{Binding #slider.Value}" Width="300" ShowProgressText="True"/>
+    </StackPanel>
+</Window>
