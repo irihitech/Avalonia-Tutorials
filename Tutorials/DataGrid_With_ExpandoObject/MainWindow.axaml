@@ -8,6 +8,11 @@
         x:DataType="local:MainWindowViewModel"
         Title="DataGrid Bind to ExpandoObject">
     <DataGrid ItemsSource="{Binding Items}">
+        <DataGrid.DataTemplates>
+            <DataTemplate x:DataType="x:String">
+                <TextBlock Text="{Binding}"></TextBlock>
+            </DataTemplate>
+        </DataGrid.DataTemplates>
         <DataGrid.Columns>
             <DataGridTextColumn Header="Id" Binding="{ReflectionBinding Path=Id}"/>
             <DataGridTextColumn Header="Name" Binding="{ReflectionBinding Path=Name}"/>
