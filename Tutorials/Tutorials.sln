@@ -16,6 +16,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Semi-NativeAOT", "Semi-Nati
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ursa-NativeAOT", "Ursa-NativeAOT\Ursa-NativeAOT.csproj", "{5B87F7B5-9ECD-4C53-9EEA-FEC5EE917737}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Declarative", "Declarative\Declarative.csproj", "{B2A4E9FF-BFAB-4FB7-95AC-A2655009A732}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -54,5 +56,9 @@ Global
 		{5B87F7B5-9ECD-4C53-9EEA-FEC5EE917737}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5B87F7B5-9ECD-4C53-9EEA-FEC5EE917737}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5B87F7B5-9ECD-4C53-9EEA-FEC5EE917737}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B2A4E9FF-BFAB-4FB7-95AC-A2655009A732}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B2A4E9FF-BFAB-4FB7-95AC-A2655009A732}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B2A4E9FF-BFAB-4FB7-95AC-A2655009A732}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B2A4E9FF-BFAB-4FB7-95AC-A2655009A732}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
