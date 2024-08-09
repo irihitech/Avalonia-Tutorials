@@ -1,0 +1,33 @@
+<Window
+    x:Class="Manipulating_ItemContainer.Views.MainWindow"
+    xmlns="https://github.com/avaloniaui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:i="clr-namespace:Avalonia.Xaml.Interactivity;assembly=Avalonia.Xaml.Interactivity"
+    xmlns:iac="clr-namespace:Avalonia.Xaml.Interactions.Custom;assembly=Avalonia.Xaml.Interactions.Custom"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:vm="using:Manipulating_ItemContainer.ViewModels"
+    Title="Manipulating_ItemContainer"
+    d:DesignHeight="450"
+    d:DesignWidth="800"
+    x:DataType="vm:MainWindowViewModel"
+    Icon="/Assets/avalonia-logo.ico"
+    mc:Ignorable="d">
+
+    <Design.DataContext>
+        <!--
+            This only sets the DataContext for the previewer in an IDE,
+            to set the actual DataContext for runtime, set the DataContext property in code (look at App.axaml.cs)
+        -->
+        <vm:MainWindowViewModel />
+    </Design.DataContext>
+
+    <StackPanel Orientation="Horizontal">
+        <HeaderedContentControl Header="{Binding CurrentInteraction}" Theme="{DynamicResource GroupBox}">
+            <ListBox
+                ItemsSource="{Binding Items}"
+                PointerMoved="InputElement_OnPointerMoved" />
+        </HeaderedContentControl>
+    </StackPanel>
+
+</Window>
