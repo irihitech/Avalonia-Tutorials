@@ -1,0 +1,40 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:vm="using:Form_Dynamic_Generation.ViewModels"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:u="https://irihi.tech/ursa"
+        xmlns:formViewModels="clr-namespace:Form_Dynamic_Generation.ViewModels.FormViewModels"
+        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+        x:Class="Form_Dynamic_Generation.Views.MainWindow"
+        x:DataType="vm:MainWindowViewModel"
+        Icon="/Assets/avalonia-logo.ico"
+        Title="Form_Dynamic_Generation">
+
+    <Design.DataContext>
+        <!-- This only sets the DataContext for the previewer in an IDE,
+             to set the actual DataContext for runtime, set the DataContext property in code (look at App.axaml.cs) -->
+        <vm:MainWindowViewModel/>
+    </Design.DataContext>
+
+    <Window.DataTemplates>
+        <DataTemplate x:DataType="formViewModels:TextFormItemViewModel">
+             <TextBox Text="{Binding Text}" HorizontalAlignment="Stretch" />
+        </DataTemplate>
+        <DataTemplate x:DataType="formViewModels:DateFormItemViewModel">
+            <u:DatePicker SelectedDate="{Binding Date}" HorizontalAlignment="Stretch" />
+        </DataTemplate>
+        <DataTemplate x:DataType="formViewModels:SelectFormItemViewModel">
+            <ComboBox SelectedItem="{Binding SelectedItem}" HorizontalAlignment="Stretch" ItemsSource="{Binding Items}"/>
+        </DataTemplate>
+    </Window.DataTemplates>
+    <u:Form ItemsSource="{Binding FormItems}" Width="300" LabelPosition="Left" LabelAlignment="Left" LabelWidth="*"> 
+        <u:Form.Styles>
+            <Style Selector="u|FormItem" x:DataType="formViewModels:IFormItemViewModel">
+                <Setter Property="Label" Value="{Binding Label}"/>
+                <Setter Property="IsRequired" Value="{Binding IsRequired}"/>
+            </Style>
+        </u:Form.Styles>
+    </u:Form>
+
+</Window>
