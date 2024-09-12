@@ -28,7 +28,7 @@
             <ComboBox SelectedItem="{Binding SelectedItem}" HorizontalAlignment="Stretch" ItemsSource="{Binding Items}"/>
         </DataTemplate>
     </Window.DataTemplates>
-    <u:Form ItemsSource="{Binding FormItems}" Width="300" LabelPosition="Left" LabelAlignment="Left"> 
+    <u:Form ItemsSource="{Binding FormItems}" Width="300" LabelPosition="Left" LabelAlignment="Left" LabelWidth="*"> 
         <u:Form.Styles>
             <Style Selector="u|FormItem" x:DataType="formViewModels:IFormItemViewModel">
                 <Setter Property="Label" Value="{Binding Label}"/>
