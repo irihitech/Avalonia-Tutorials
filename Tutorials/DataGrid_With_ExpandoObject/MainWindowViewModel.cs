@@ -30,6 +30,7 @@ public class MainWindowViewModel: ObservableObject
         dict["Id"] = i;
         dict["Name"] = $"Name {i}";
         dict["Value"] = i * 10.0;
+        dict["Valid"] = i % 2 == 0;
         return obj;
     }
 }
