@@ -7,11 +7,7 @@
         xmlns:local="clr-namespace:DataGrid_With_ExpandoObject"
         x:DataType="local:MainWindowViewModel"
         Title="DataGrid Bind to ExpandoObject">
-    <DataGrid ItemsSource="{Binding Items}">
-        <DataGrid.Columns>
-            <DataGridTextColumn Header="Id" Binding="{ReflectionBinding Path=Id}"/>
-            <DataGridTextColumn Header="Name" Binding="{ReflectionBinding Path=Name}"/>
-            <DataGridTextColumn Header="Value" Binding="{ReflectionBinding Path=Value}"/>
-        </DataGrid.Columns>
+    <DataGrid ItemsSource="{Binding Items}" local:DataGridColumnHelper.DeriveExpandoColumns="True">
+        
     </DataGrid>
 </Window>
