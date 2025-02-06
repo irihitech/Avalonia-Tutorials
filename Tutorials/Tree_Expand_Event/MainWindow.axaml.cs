@@ -14,7 +14,15 @@ public partial class MainWindow : Window
     {
         if (e.Source is TreeViewItem item)
         {
-            text.Text = item.Header?.ToString();
+            text.Text = item.Header +" Expanded";
+        }
+    }
+
+    private void TreeViewItem_OnCollapsed(object? sender, RoutedEventArgs e)
+    {
+        if (e.Source is TreeViewItem item)
+        {
+            text.Text = item.Header +" Collapsed";
         }
     }
 }
