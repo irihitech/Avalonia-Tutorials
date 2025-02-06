@@ -20,6 +20,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Text_Scrolling", "Text_Scro
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Form_Dynamic_Generation", "Form_Dynamic_Generation\Form_Dynamic_Generation.csproj", "{7AA00926-77DA-41CA-B757-87ECBC636C41}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tree_Expand_Event", "Tree_Expand_Event\Tree_Expand_Event.csproj", "{40796EEC-C916-4AEF-B6EC-2F387446D982}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -66,5 +68,9 @@ Global
 		{7AA00926-77DA-41CA-B757-87ECBC636C41}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7AA00926-77DA-41CA-B757-87ECBC636C41}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7AA00926-77DA-41CA-B757-87ECBC636C41}.Release|Any CPU.Build.0 = Release|Any CPU
+		{40796EEC-C916-4AEF-B6EC-2F387446D982}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{40796EEC-C916-4AEF-B6EC-2F387446D982}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{40796EEC-C916-4AEF-B6EC-2F387446D982}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{40796EEC-C916-4AEF-B6EC-2F387446D982}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
