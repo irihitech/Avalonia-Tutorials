@@ -26,6 +26,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ursa_Splash_Simple", "Ursa_
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ursa_Splash_Simple_Mvvm", "Ursa_Splash_Simple_Mvvm\Ursa_Splash_Simple_Mvvm.csproj", "{2A1BE402-DE29-4687-B122-753E3DFC93C9}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ursa_Splash_Interactive", "Ursa_Splash_Interactive\Ursa_Splash_Interactive.csproj", "{19B99CD8-CC66-4F5F-A50C-03B668C4A87B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -84,5 +86,9 @@ Global
 		{2A1BE402-DE29-4687-B122-753E3DFC93C9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2A1BE402-DE29-4687-B122-753E3DFC93C9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2A1BE402-DE29-4687-B122-753E3DFC93C9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{19B99CD8-CC66-4F5F-A50C-03B668C4A87B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{19B99CD8-CC66-4F5F-A50C-03B668C4A87B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{19B99CD8-CC66-4F5F-A50C-03B668C4A87B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{19B99CD8-CC66-4F5F-A50C-03B668C4A87B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
