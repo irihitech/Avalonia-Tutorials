@@ -22,6 +22,12 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Form_Dynamic_Generation", "
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tree_Expand_Event", "Tree_Expand_Event\Tree_Expand_Event.csproj", "{40796EEC-C916-4AEF-B6EC-2F387446D982}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ursa_Splash_Simple", "Ursa_Splash_Simple\Ursa_Splash_Simple.csproj", "{0B6F51A5-F7BD-4AA8-9AC7-DF396CBE2CE9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ursa_Splash_Simple_Mvvm", "Ursa_Splash_Simple_Mvvm\Ursa_Splash_Simple_Mvvm.csproj", "{2A1BE402-DE29-4687-B122-753E3DFC93C9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ursa_Splash_Interactive", "Ursa_Splash_Interactive\Ursa_Splash_Interactive.csproj", "{19B99CD8-CC66-4F5F-A50C-03B668C4A87B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -72,5 +78,17 @@ Global
 		{40796EEC-C916-4AEF-B6EC-2F387446D982}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{40796EEC-C916-4AEF-B6EC-2F387446D982}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{40796EEC-C916-4AEF-B6EC-2F387446D982}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0B6F51A5-F7BD-4AA8-9AC7-DF396CBE2CE9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0B6F51A5-F7BD-4AA8-9AC7-DF396CBE2CE9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0B6F51A5-F7BD-4AA8-9AC7-DF396CBE2CE9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0B6F51A5-F7BD-4AA8-9AC7-DF396CBE2CE9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2A1BE402-DE29-4687-B122-753E3DFC93C9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2A1BE402-DE29-4687-B122-753E3DFC93C9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2A1BE402-DE29-4687-B122-753E3DFC93C9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2A1BE402-DE29-4687-B122-753E3DFC93C9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{19B99CD8-CC66-4F5F-A50C-03B668C4A87B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{19B99CD8-CC66-4F5F-A50C-03B668C4A87B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{19B99CD8-CC66-4F5F-A50C-03B668C4A87B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{19B99CD8-CC66-4F5F-A50C-03B668C4A87B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

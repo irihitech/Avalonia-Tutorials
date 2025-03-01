@@ -1,0 +1,15 @@
+<u:SplashWindow xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:u="https://irihi.tech/ursa"
+        mc:Ignorable="d" 
+        Width="500"
+        Height="300"
+        x:Class="Ursa_Splash_Simple.SimpleSplashWindow"
+        CountDown="0:0:3"
+        Title="SimpleSplashWindow">
+    <Grid HorizontalAlignment="Center" VerticalAlignment="Center">
+        <TextBlock Text="Splash Screen will redirect to MainWindow after 3 seconds" TextWrapping="Wrap"></TextBlock>
+    </Grid>
+</u:SplashWindow>

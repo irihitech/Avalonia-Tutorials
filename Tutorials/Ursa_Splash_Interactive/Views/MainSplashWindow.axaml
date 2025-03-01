@@ -1,0 +1,53 @@
+<u:SplashWindow
+    x:Class="Ursa_Splash_Interactive.Views.MainSplashWindow"
+    xmlns="https://github.com/avaloniaui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:u="https://irihi.tech/ursa"
+    xmlns:viewModels="clr-namespace:Ursa_Splash_Interactive.ViewModels"
+    Title="MainSplashWindow"
+    d:DesignHeight="450"
+    d:DesignWidth="800"
+    x:DataType="viewModels:MainSplashViewModel"
+    mc:Ignorable="d">
+    <StackPanel
+        HorizontalAlignment="Center"
+        VerticalAlignment="Center"
+        Spacing="16">
+        <TextBlock
+            HorizontalAlignment="Center"
+            Classes="H4"
+            Text="Please Login"
+            Theme="{DynamicResource TitleTextBlock}" />
+        <TextBox
+            Width="300"
+            Text="{Binding UserName}"
+            Watermark="Username">
+            <TextBox.InnerLeftContent>
+                <PathIcon Width="12" Data="{DynamicResource SemiIconUser}" />
+            </TextBox.InnerLeftContent>
+        </TextBox>
+        <TextBox
+            Width="300"
+            Classes="revealPasswordButton"
+            Text="{Binding Password}"
+            Watermark="Password">
+            <TextBox.InnerLeftContent>
+                <PathIcon Width="12" Data="{DynamicResource SemiIconLock}" />
+            </TextBox.InnerLeftContent>
+        </TextBox>
+        <u:IconButton
+            Width="300"
+            Classes="Primary"
+            Command="{Binding LoginCommand}"
+            Content="Login"
+            IsLoading="{Binding IsLoading}"
+            Theme="{DynamicResource SolidIconButton}" />
+        <Button
+            Width="300"
+            Classes="Secondary"
+            Command="{Binding LeaveCommand}"
+            Content="Leave" />
+    </StackPanel>
+</u:SplashWindow>
