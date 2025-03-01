@@ -11,13 +11,24 @@ public partial class MainSplashViewModel:  ViewModelBase, IDialogContext
     public RelayCommand LeaveCommand { get; }
     public AsyncRelayCommand LoginCommand { get; }
     [ObservableProperty] private bool _isLoading;
-    [ObservableProperty] private string _userName;
-    [ObservableProperty] private string _password;
+    
+    [ObservableProperty] 
+    [NotifyCanExecuteChangedFor(nameof(LoginCommand))]
+    private string _userName;
+    
+    [ObservableProperty] 
+    [NotifyCanExecuteChangedFor(nameof(LoginCommand))]
+    private string _password;
 
     public MainSplashViewModel()
     {
-        LoginCommand = new AsyncRelayCommand(OnLogin);
+        LoginCommand = new AsyncRelayCommand(OnLogin, CanLogin);
         LeaveCommand = new RelayCommand(Close);
+    }
+
+    private bool CanLogin()
+    {
+        return !string.IsNullOrWhiteSpace(UserName) && !string.IsNullOrWhiteSpace(Password);
     }
 
     private async Task OnLogin()
