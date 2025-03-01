@@ -4,7 +4,7 @@ using Avalonia.Controls;
 using Avalonia.Markup.Xaml;
 using Ursa.Controls;
 
-namespace Ursa_Simple_Splash;
+namespace Ursa_Splash_Simple;
 
 public partial class SimpleSplashWindow : SplashWindow
 {

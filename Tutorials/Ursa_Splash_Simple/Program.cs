@@ -1,7 +1,7 @@
 ﻿using Avalonia;
 using System;
 
-namespace Ursa_Simple_Splash;
+namespace Ursa_Splash_Simple;
 
 class Program
 {

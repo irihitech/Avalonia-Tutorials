@@ -6,7 +6,7 @@
         mc:Ignorable="d" 
         Width="500"
         Height="300"
-        x:Class="Ursa_Simple_Splash.SimpleSplashWindow"
+        x:Class="Ursa_Splash_Simple.SimpleSplashWindow"
         CountDown="0:0:3"
         Title="SimpleSplashWindow">
     <Grid HorizontalAlignment="Center" VerticalAlignment="Center">

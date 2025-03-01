@@ -2,7 +2,7 @@ using Avalonia;
 using Avalonia.Controls.ApplicationLifetimes;
 using Avalonia.Markup.Xaml;
 
-namespace Ursa_Simple_Splash;
+namespace Ursa_Splash_Simple;
 
 public partial class App : Application
 {

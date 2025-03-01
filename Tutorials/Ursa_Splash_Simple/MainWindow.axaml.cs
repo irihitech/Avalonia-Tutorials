@@ -1,6 +1,6 @@
 using Avalonia.Controls;
 
-namespace Ursa_Simple_Splash;
+namespace Ursa_Splash_Simple;
 
 public partial class MainWindow : Window
 {
