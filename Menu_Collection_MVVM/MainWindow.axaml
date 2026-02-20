@@ -13,14 +13,43 @@
     WindowStartupLocation="CenterScreen"
     mc:Ignorable="d">
     <DockPanel>
+        <!-- This is a sample of generating entire menu with MVVM -->
         <Menu DockPanel.Dock="Top" ItemsSource="{Binding MenuItems}">
-            <Menu.ItemContainerTheme>
-                <ControlTheme x:DataType="local:MenuItemViewModel" TargetType="MenuItem" BasedOn="{StaticResource {x:Type MenuItem}}">
-                    <Setter Property="Header" Value="{Binding Header}" />
-                    <Setter Property="ItemsSource" Value="{Binding SubItems}" />
-                    <Setter Property="Command" Value="{Binding Command}" />
-                </ControlTheme>
-            </Menu.ItemContainerTheme>
+            <Menu.Styles>
+                <Style Selector="MenuItem" x:DataType="local:MenuItemViewModel">
+                    <!-- below line is needed to generate separator from dash. You can remove it if you don't need to -->
+                    <Setter Property="Header" Value="{Binding MenuHeader}" />
+                    <Setter Property="Command" Value="{Binding MenuCommand}" />
+                </Style>
+            </Menu.Styles>
+            <Menu.ItemTemplate>
+                <TreeDataTemplate x:DataType="local:MenuItemViewModel" ItemsSource="{Binding SubItems}">
+                    <TextBlock Text="{Binding MenuHeader}" />
+                </TreeDataTemplate>
+            </Menu.ItemTemplate>
+        </Menu>
+        <!-- this is a sample of partially generating menu with MVVM -->
+        <Menu DockPanel.Dock="Top">
+            <MenuItem Header="Fixed Menu Item1" >
+                <MenuItem Header="Fixed SubMenu Item1" />
+            </MenuItem>
+            <MenuItem Header="Fixed Menu Item2" >
+                <MenuItem Header="Fixed SubMenu Item2" />
+            </MenuItem>
+            <MenuItem Header="Fixed Menu Item3" ItemsSource="{Binding MenuItems}" >
+                <MenuItem.Styles>
+                    <Style Selector="MenuItem" x:DataType="local:MenuItemViewModel">
+                        <!-- below line is needed to generate separator from dash. You can remove it if you don't need to -->
+                        <Setter Property="Header" Value="{Binding MenuHeader}" />
+                        <Setter Property="Command" Value="{Binding MenuCommand}" />
+                    </Style>
+                </MenuItem.Styles>
+                <MenuItem.ItemTemplate>
+                    <TreeDataTemplate x:DataType="local:MenuItemViewModel" ItemsSource="{Binding SubItems}">
+                        <TextBlock Text="{Binding MenuHeader}" />
+                    </TreeDataTemplate>
+                </MenuItem.ItemTemplate>
+            </MenuItem>
         </Menu>
         <TextBlock
             HorizontalAlignment="Center"

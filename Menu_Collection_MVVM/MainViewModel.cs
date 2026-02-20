@@ -48,18 +48,18 @@ public partial class MainViewModel : ObservableObject
 
 public partial class MenuItemViewModel : ObservableObject
 {
-    public string Header { get; }
+    public string MenuHeader { get; }
 
     public ObservableCollection<MenuItemViewModel>? SubItems { get; set; }
 
-    public IRelayCommand? Command { get; }
+    public IRelayCommand? MenuCommand { get; }
 
     public MenuItemViewModel(string header, System.Action? action = null)
     {
-        Header = header;
+        MenuHeader = header;
         if (action is not null)
         {
-            Command = new RelayCommand(action);
+            MenuCommand = new RelayCommand(action);
         }
     }
 }
